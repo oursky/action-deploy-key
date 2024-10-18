@@ -30,3 +30,7 @@ For example if you want to clone `oursky/private-repo-child` inside `oursky/priv
 
 - `repo` (required): The repository to add the deploy key to.
 - `ssh-private-key` (required): The deploy key.
+
+## Credits
+
+- [webfactory/ssh-agent](https://github.com/webfactory/ssh-agent)
