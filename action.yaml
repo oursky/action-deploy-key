@@ -1,0 +1,14 @@
+name: 'Deploy Key'
+description: 'Add deploy key for external repos, useful for cloning submodules'
+runs:
+  using: 'node20'
+  main: 'dist/action.js'
+  post: 'dist/cleanup.js'
+  post-if: "success()"
+inputs:
+  ssh-private-key:
+    description: 'Deploy key'
+    required: true
+  repo:
+    description: 'Github repository'
+    required: true
